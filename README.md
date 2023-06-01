@@ -1,7 +1,7 @@
 # Breast Tumor AII
 AII Project.
 
-Author:
+Authors:
  - Samuele Marino
  - Sfarzo El Husseini
  - Michele Calvanese
