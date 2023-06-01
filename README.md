@@ -1,19 +1,25 @@
-# Breast_Tumor_AII
+# Breast Tumor AII
+AII Project.
 
-The idea of this project is create is a ML and a DL model capable to detect and classify Breast Tumor given an image as input.
+Author:
+ - Samuele Marino
+ - Sfarzo El Husseini
+ - Michele Calvanese
+
+The idea of this project is to create a ML and a DL model capable to detect and classify Breast Tumor given an U/S (ultrasound) image as input.
 
 ## Data
 
-The original dataset [`Dataset_BUSI_with_GT`] is composed by 3 subfolder representing the class (normal, malignant, benign). Each of that folder contains the original images and the masks (ground truth).
+The original dataset [`Dataset_BUSI_with_GT`] is composed by 3 subfolders representing the class (normal, malignant, benign). Each of the folders contain the original images and the masks (ground truth).
 
 ## Machine Learning model
-For the ML model first of all we extract important features with computer vision techniques [`FeaturesExtraction.ipynb`] and save as `csv` file [`Features.csv`], then we try different resampling techniques and ML models [`Classification_ML.ipynb`] in order to achieve a better results.
+First of all, for the ML model we extract important features with computer vision techniques [`FeaturesExtraction.ipynb`] and save as `csv` file [`Features.csv`], then we try different resampling techniques and ML models [`Classification_ML.ipynb`] in order to achieve better results.
 
 ## Deep Learning model
-The main idea for the DL model is create something that can gives a visual help to doctors. This it the reason why we use a segmentation model. We try train the model with a weighted class loss [`breast-cancer-segmentation_class_weighted.ipynb`] and without [`breast-cancer-segmentation_unweighted.ipynb`].
+The main idea for the DL model is to create something that can give a visual help to doctors. This is the reason why we use a segmentation model. We trained the model with a weighted loss [`breast-cancer-segmentation_class_weighted.ipynb`] and without [`breast-cancer-segmentation_unweighted.ipynb`].
 
 ## Metrics
-For all the model tested we use as metrics:
+For all the model tested we used as metrics:
 - precision macro
 - recall macro
 - f1 macro
