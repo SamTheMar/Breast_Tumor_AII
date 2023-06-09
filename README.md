@@ -26,10 +26,10 @@ For all the model tested we used as metrics:
 
 ## Results
 ### ML model
-- precision macro 79.41
-- recall macro 80.10
-- f1 macro 79.53
+- precision macro 0.64
+- recall macro 0.68
+- f1 macro 0.66
 ### DL model
-- precision macro 81.41
-- recall macro 82.37
-- f1 macro 81.68
+- precision macro 0.81
+- recall macro 0.82
+- f1 macro 0.82
